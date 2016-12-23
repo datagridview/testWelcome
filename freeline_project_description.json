@@ -1,0 +1,96 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "2.1.3",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_45",
+    "freeline_cache_dir": "I:\\testWelcome",
+    "auto_dependency": true,
+    "product_flavor": "",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "root_dir": "I:\\testWelcome",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "I:\\testWelcome\\app\\build",
+    "build_cache_dir": "I:\\testWelcome\\app\\build\\freeline",
+    "build_tools_version": "25.0.1",
+    "sdk_directory": "E:\\android\\android-sdk-windows",
+    "build_tools_directory": "E:\\android\\android-sdk-windows\\build-tools\\25.0.1",
+    "compile_sdk_version": "android-25",
+    "compile_sdk_directory": "E:\\android\\android-sdk-windows\\platforms\\android-25",
+    "package": "com.example.testwelcome",
+    "debug_package": "com.example.testwelcome",
+    "main_manifest_path": "I:\\testWelcome\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "com.example.testwelcome.LoginActivity",
+    "apk_path": "I:\\testWelcome\\app\\build\\outputs\\apk\\app-debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "I:\\testWelcome\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "use_jdk8": false,
+    "main_src_directory": [
+        "I:\\testWelcome\\app\\src\\debug\\java",
+        "I:\\testWelcome\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "I:\\testWelcome\\app\\src\\debug\\res",
+        "I:\\testWelcome\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "I:\\testWelcome\\app\\src\\debug\\assets",
+        "I:\\testWelcome\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "I:\\testWelcome\\app\\src\\debug\\jni",
+        "I:\\testWelcome\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "I:\\testWelcome\\app\\src\\debug\\jniLibs",
+        "I:\\testWelcome\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "I:\\testWelcome\\app\\src\\debug\\java",
+                "I:\\testWelcome\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "I:\\testWelcome\\app\\src\\debug\\res",
+                "I:\\testWelcome\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "I:\\testWelcome\\app\\src\\debug\\assets",
+                "I:\\testWelcome\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "I:\\testWelcome\\app\\src\\debug\\jni",
+                "I:\\testWelcome\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "I:\\testWelcome\\app\\src\\debug\\jniLibs",
+                "I:\\testWelcome\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "I:\\testWelcome\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "I:\\testWelcome\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ]
+}

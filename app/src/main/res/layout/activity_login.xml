@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/BGcolor"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="right"></LinearLayout>
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--  Email Label -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/inputbox"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp">
+
+            <EditText android:id="@+id/input_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:hint="电子邮件地址"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:autoText="false"
+                android:clickable="false"
+                android:background="@null" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/inputbox">
+
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:text="登录"
+            android:background="@drawable/login"
+            android:textColor="@color/abc_hint_foreground_material_dark"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="没有账号？注册一个"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="@color/abc_background_cache_hint_selector_material_light" />
+
+    </LinearLayout>
+</ScrollView>
