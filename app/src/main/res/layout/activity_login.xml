@@ -44,7 +44,6 @@
                     android:hint="电子邮件地址"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:autoText="false"
                 android:clickable="false"
                 android:background="@null" />
         </LinearLayout>
@@ -69,7 +68,7 @@
                 android:background="@null" />
         </LinearLayout>
 
-        <android.support.v7.widget.AppCompatButton
+        <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="39dp"

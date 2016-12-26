@@ -41,4 +41,7 @@
     <string name="title_previous_button">Previous Button/Action Bar</string>
     <string name="description_previous_button">Shows a previous button on all but the first page. Back button exits.</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
