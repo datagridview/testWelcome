@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies/ksoap2-android-assembly-3.0.0-jar-with-dependencies.iml" filepath="$PROJECT_DIR$/app/libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies/ksoap2-android-assembly-3.0.0-jar-with-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelayout/swipelayout.iml" filepath="$PROJECT_DIR$/swipelayout/swipelayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/testWelcome.iml" filepath="$PROJECT_DIR$/testWelcome.iml" />
     </modules>
   </component>

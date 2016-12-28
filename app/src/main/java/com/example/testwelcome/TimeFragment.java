@@ -72,7 +72,7 @@ public class TimeFragment extends Fragment {
         titlebar.setBackgroundColor(Color.parseColor("#546379"));
         titlebar.setTitle("学习之路");
         titlebar.setTitleColor(Color.WHITE);
-
+        titlebar.setLeftImageResource(R.drawable.head1);
     }
 
 }

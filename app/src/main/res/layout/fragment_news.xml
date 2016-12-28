@@ -10,15 +10,22 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
 
-    <com.shizhefei.view.coolrefreshview.CoolRefreshView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/crv">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <com.shizhefei.view.coolrefreshview.CoolRefreshView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/crv">
+        <com.ericliu.asyncexpandablelist.CollectionView
+            android:id="@+id/collectionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </com.shizhefei.view.coolrefreshview.CoolRefreshView>
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!--</com.shizhefei.view.coolrefreshview.CoolRefreshView>-->
 
 
 

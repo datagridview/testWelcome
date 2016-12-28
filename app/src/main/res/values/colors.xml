@@ -41,6 +41,18 @@
 
     <color name="transparent_button_pressed">#44444444</color>
     <color name="transparent_button_focused">#44666666</color>
+    <color name="my_card_background">#ffe1e1e1</color>
+    <color name="my_card_background2">#fff1f1f1</color>
+
+
+    <color name="blue_dark">#ff1976d1</color>
+    <color name="blue">#ff2195f2</color>
+    <color name="background">#ff333333</color>
+    <color name="shadow">#AA000000</color>
+
+    <color name="mybutton_backcolor">#ff1abc9c</color>
+    <color name="mybutton_backcolor_pressed">#ff117c67</color>
+
 
 
 </resources>

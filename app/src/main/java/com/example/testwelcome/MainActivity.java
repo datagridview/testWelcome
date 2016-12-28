@@ -3,12 +3,14 @@ package com.example.testwelcome;
         import android.app.Fragment;
         import android.app.FragmentManager;
         import android.app.FragmentTransaction;
-        import android.graphics.Color;
         import android.os.Bundle;
-        import android.support.annotation.ColorInt;
+
         import android.support.v7.app.AppCompatActivity;
         import android.util.Log;
 
+
+        import com.mxn.soul.flowingdrawer_core.FlowingView;
+        import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 
         import java.util.ArrayList;
         import java.util.List;
@@ -34,11 +36,13 @@ public class MainActivity extends Activity
     TimeFragment timeFragment=new TimeFragment();
     ProfileFragment profileFragment=new ProfileFragment();
 
-
     private TitleBar titlebar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initFragment();
@@ -48,7 +52,6 @@ public class MainActivity extends Activity
     private void initFragment()
     {
         mFragments = new ArrayList<>();
-
         mFragments.add(newsFragment);
         mFragments.add(resourceFragment);
         mFragments.add(timeFragment);
@@ -118,13 +121,8 @@ public class MainActivity extends Activity
         }
     };
 
-//    private Fragment createFragment(String content)
-//    {
-//        AFragment fragment = new AFragment();
-//        Bundle bundle = new Bundle();
-//        bundle.putString("content",content);
-//        fragment.setArguments(bundle);
-//        return fragment;
-//    }
-
 }
+
+
+
+

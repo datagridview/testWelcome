@@ -9,4 +9,5 @@
     android:paddingTop="16dp"
     tools:context="com.example.testwelcome.MyWelcomeActivity">
 
+
 </RelativeLayout>

@@ -10,12 +10,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ksoap2-android-assembly-3.0.0-jar-with-dependencies" />
+            <option value="$PROJECT_DIR$/swipelayout" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ksoap2-android-assembly-3.0.0-jar-with-dependencies" />
+            <option value="$PROJECT_DIR$/swipelayout" />
           </set>
         </option>
       </GradleProjectSettings>

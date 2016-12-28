@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 android:id="@+id/layout"
 android:layout_width="match_parent"
 android:layout_height="match_parent">
-<FrameLayout
-    android:id="@+id/frameLayout"
-    android:layout_above="@+id/tab"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-<me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout
-    android:id="@+id/tab"
-    app:elevation="8dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"/>
-</RelativeLayout>
+    <!--menu-->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipChildren="false"
+        >
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/fragment_menu"
+            />
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_above="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="507dp"
+                android:layout_weight="1.03" />
+
+            <me.majiajie.pagerbottomtabstrip.PagerBottomTabLayout
+                android:id="@+id/tab"
+                app:elevation="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

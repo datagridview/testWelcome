@@ -1,6 +1,9 @@
 package com.example.testwelcome;
 
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -8,6 +11,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.shizhefei.view.coolrefreshview.CoolRefreshView;
@@ -28,6 +32,8 @@ public class ResourceFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private FragmentManager manager;
+    private FragmentTransaction ft;
 
     public ResourceFragment() {
         // Required empty public constructor
@@ -54,6 +60,7 @@ public class ResourceFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        manager = getFragmentManager();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -69,12 +76,19 @@ public class ResourceFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         boolean isImmersive = false;
         final TitleBar titlebar = (TitleBar) getActivity().findViewById(R.id.title_bar);
-
         titlebar.setImmersive(isImmersive);
-
         titlebar.setBackgroundColor(Color.parseColor("#546379"));
         titlebar.setTitle("学习资源");
         titlebar.setTitleColor(Color.WHITE);
+        titlebar.setLeftImageResource(R.drawable.head1);
+        Button btnMath=(Button) getActivity().findViewById(R.id.btnMath);
+        btnMath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(getActivity(),demActivity.class);
+                startActivity(intent1);
+            }
+        });
 
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Welcome Demo</string>
+    <string name="app_name">乐学</string>
 
     <string name="website">Website</string>
     <string name="source">Source</string>
@@ -44,4 +44,106 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--recycleview-->
+    <string name="element_text">Element</string>
+    <string name="grid_layout_manager">Grid Layout Manager</string>
+    <string name="linear_layout_manager">Linear Layout Manager</string>
+    <string name="activity_main">CollectionView</string>
+    <string name="activity_async">AsyncExpandableListView</string>
+    <string name="news_header_top_stories">学校新闻</string>
+    <string name="news_title1">“丹阳走进南京师范大学”系列活动精彩纷呈</string>
+    <string name="news_body1">去年10月，我校与丹阳市签署了全面合作协议，在丹阳举行了“南京师范大学走进丹阳”系列活动暨南京师范大学中北学院迁址丹阳项目开工奠基仪式，双方在科技、文化和教育等领域进行了卓有成效的合作,取得了丰硕成果。此次举行的“丹阳走进南京师范大学”系列活动，不仅进一步深化了我校和丹阳市的友谊与合作，更是深入贯彻省第十三次党代会精神，发挥学校科教资源优势服务地方经济的有力实践。</string>
+    <string name="news_title2">2017年全国硕士研究生招生考试工作顺利完成</string>
+    <string name="news_body2">2017年全国硕士研究生招生考试于2016年12月24-26日进行，我校考点顺利完成考试工作。24日上午，副校长潘百齐及研究生院负责人到考试现场进行巡视和督查。</string>
+    <string name="news_title_3">我校第30届社团巡礼月圆满落幕</string>
+    <string name="news_body3">12月23日晚，由校团委主办，校学生会承办的第30届“拾光旅社”社团巡礼月闭幕式在仙林校区新北大礼堂举行。党委副书记王建，校办、宣传部、学工处、研究生院、校团委、大学生艺术教育中心、附属实验学校等相关部门负责人，以及来自兄弟高校的学生会、社联负责人等千余名师生共同度过了一个精彩而难忘的夜晚。</string>
+    <string name="news_header_world">学术动态</string>
+    <string name="news_title4">学术报告：New Biomaterials for Biomedical Research and Biomedical Devices: What’s coming up?</string>
+    <string name="news_body4">文学军教授于2012年当选为美国医学与生物工程学院院士，是美国犹他大学生物工程系终身制教授、美国弗吉尼亚联邦大学William Goodwin首席终身席正教授，并担任该校生物制造实验室主任及再生医学实验室主任。2013年在美国克莱姆森大学创建了“克莱姆森大学和南卡医科大学联合生物医学工程中心”。文教授主要从事生物材料、纳米技术、三维打印生物制造技术、干细胞和组织工程方面的研究，持有120多项核心技术，过去10年中主持和参与40 多个科研项目，总经费超过4500万美元，发表学术论文100多篇、申请专利20余项。于2008年获美国国家科学基金青年科学家成就奖。在荷兰Elsevier数据库发布的“2014年中国高被引学者榜单”中，位居生物医学工程领域第一名。</string>
+    <string name="news_title5">学术报道：毛细管电泳的生物医学分析进展</string>
+    <string name="news_body5">受我校“千人计划”专家陈大勇教授的邀请，2016年12月19号北京理工大学生命学院教授，博士生导师，屈锋教授在化学与材料科学学院做了精彩学术报告。报告主要内容包括：（1）毛细管电泳的发展背景和生物医药分析应用、（2）核酸适配体的国内外发展现状、（3）基于毛细管电泳的核酸适配体的筛选策略。屈锋教授多年来专注于毛细管电泳的生物医学分析进展，取得了很多成果。此次的报告内容丰富、信息量大、形象生动，不仅涵盖了毛细管电泳的发展史，而且展示了毛细管电泳在 “大健康”（医药、生命分析、环境、食品安全等）方面的应用以及前沿科研成果。</string>
+    <string name="news_header_australia">媒体南师</string>
+    <string name="news_title6">〖江苏电视台〗师范院校毕业生找工作 中小学岗位受青睐 “资格证”不能少</string>
+    <string name="news_body6">2016年12月13日是第三个南京大屠杀死难者国家公祭日。为了悼念遇难同胞，祈愿和平，南京师范大学师生开展南京大屠杀死难者国家公祭日系列活动。清晨7点，天刚蒙蒙亮，初冬的南京清冽空气中带着寒意。我校国旗班的同学们来到世纪广场，庄严地将国旗升起后又徐徐降下，为遇难同胞下半旗致哀。沉痛悼念三十万死难同胞及在日本帝国主义侵略战争中惨遭杀戮的死难者。</string>
+    <string name="news_title7">〖交汇点〗首个空气净化器环标明年实施 关于空气净化器还有这些门道</string>
+    <string name="news_body7">雾霾再度成为人们“会呼吸的痛”。很多家庭通过购买空气净化器来改善屋内空气质量，但多数时候效果并不理想。13日，环保部环境发展中心发布我国首个空气净化器中国环境标志标准，定于明年1月1日起实施。标准实施后，消费者可以根据净化器产品上是否贴有中国环境标志作为购买产品的重要依据之一。</string>
+    <string name="news_title8">Lawyers meet voluntary pro bono target for first time since 2013</string>
+    <string name="news_body8">A voluntary target for the amount of pro bono work done by Australian lawyers has been met for the first time since 2013. Key points: The Australian Pro Bono Centre\'s asks lawyers to do 35 hours of free community work a year; Pro bono services can help ...\n</string>
+
+    <string name="press_to_getin">点击进入</string>
+    <string name="math_title">数学</string>
+    <string name="geography_title">地理</string>
+    <string name="physics_title">物理</string>
+    <string name="chemistry_title">化学</string>
+    <string name="chinese_title">语文</string>
+
+
+    <!--drawer-->
+
+    <!-- Sample menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_persistent_compact_header">PersistentHeader Drawer</string>
+    <string name="drawer_item_persistent_compact_header_desc">Smaller persistent account header</string>
+    <string name="drawer_item_compact_header">CompactHeader Drawer</string>
+    <string name="drawer_item_compact_header_desc">Smaller account header</string>
+    <string name="drawer_item_action_bar_drawer">ActionBar Drawer</string>
+    <string name="drawer_item_action_bar_drawer_desc">Shows how to use with an actionbar</string>
+    <string name="drawer_item_multi_drawer">Multi Drawer</string>
+    <string name="drawer_item_multi_drawer_desc">Left and Right side drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer">NonTranslucentStatus Drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer_desc">Drawer below statusBar</string>
+    <string name="drawer_item_advanced_drawer">Advanced Drawer</string>
+    <string name="drawer_item_advanced_drawer_desc">More advanced drawer features</string>
+    <string name="drawer_item_embedded_drawer">Embedded Drawer</string>
+    <string name="drawer_item_embedded_drawer_desc">Embed the drawer anywhere</string>
+    <string name="drawer_item_mini_drawer">MiniDrawer</string>
+    <string name="drawer_item_mini_drawer_desc">Always visible MiniDrawer</string>
+    <string name="drawer_item_fullscreen_drawer">FullScreen Drawer</string>
+    <string name="drawer_item_fullscreen_drawer_desc">Drawer in FullScreen activity</string>
+    <string name="drawer_item_custom_container_drawer">CustomContainer Drawer</string>
+    <string name="drawer_item_custom_container_drawer_desc">Drawer in different view hirachy</string>
+    <string name="drawer_item_menu_drawer">Menu Drawer</string>
+    <string name="drawer_item_menu_drawer_desc">Drawer from menu.xml</string>
+    <string name="drawer_item_fragment_drawer">Fragment Drawer</string>
+    <string name="drawer_item_fragment_drawer_desc">Use drawer within fragments</string>
+    <string name="drawer_item_collapsing_toolbar_drawer">CollapsingToolbar Drawer</string>
+    <string name="drawer_item_collapsing_toolbar_drawer_desc">Uses a CollapsingToolbarLayout</string>
+    <string name="drawer_item_crossfade_drawer_layout_drawer">CrossfadeDrawerLayout</string>
+    <string name="drawer_item_crossfade_drawer_layout_drawer_desc">2-Step Drawer behavior</string>
+
+    <string name="drawer_item_menu_drawer_item">Menu Drawer Item</string>
+    <string name="drawer_item_menu_drawer_item_desc">Sample menu item with overflow button</string>
+
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Free Play</string>
+    <string name="drawer_item_custom">Custom</string>
+    <string name="drawer_item_section_header">Section Header</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+
+    <!--drawer2-->
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
 </resources>
+
+
