@@ -1,5 +1,6 @@
 package com.example.testwelcome;
 
+//定义一个新闻类
 public class News {
     private String newsTitle;
     private String newsBody;

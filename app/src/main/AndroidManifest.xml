@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.testwelcome">
 
-    <activity android:name=".CustomContainerActivity"></activity>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <activity android:name=".CustomContainerActivity" />
 
     <application
         android:allowBackup="true"
@@ -13,16 +15,22 @@
         <activity
             android:name=".MyWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".demActivity">
+        <activity android:name=".demActivity"></activity>
+        <activity android:name=".cameraActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

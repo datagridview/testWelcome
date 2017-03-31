@@ -12,6 +12,8 @@ public class demActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.demo1);
+
+        //有关titlebar类的定义使用
         boolean isImmersive = false;
         final TitleBar titlebar = (TitleBar) findViewById(R.id.title_bar);
         titlebar.setImmersive(isImmersive);
@@ -22,9 +24,9 @@ public class demActivity extends Activity {
         titlebar.setLeftClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 finish();
             }
         });
+
     }
 }

@@ -53,6 +53,7 @@
     <color name="mybutton_backcolor">#ff1abc9c</color>
     <color name="mybutton_backcolor_pressed">#ff117c67</color>
 
+    <color name="colorBackground">#eeeeee</color>
 
 
 </resources>

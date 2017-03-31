@@ -1,24 +1,21 @@
 package com.example.testwelcome;
 
-        import android.content.Context;
-        import android.content.res.Resources;
-        import android.graphics.drawable.Drawable;
-        import android.text.TextUtils;
-        import android.util.AttributeSet;
-        import android.view.Gravity;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.ImageView;
-        import android.widget.LinearLayout;
-        import android.widget.TextView;
 
-        import java.util.LinkedList;
+//外部类
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import java.util.LinkedList;
 
-/**
- * 类描述：
- * 创建人：Bob
- * 创建时间：2015/9/25 11:36
- */
+
 public class TitleBar extends ViewGroup implements View.OnClickListener {
     private static final int DEFAULT_MAIN_TEXT_SIZE = 18;
     private static final int DEFAULT_SUB_TEXT_SIZE = 12;
@@ -152,11 +149,13 @@ public class TitleBar extends ViewGroup implements View.OnClickListener {
     public void setTitle(CharSequence title) {
         int index = title.toString().indexOf("\n");
         if (index > 0) {
-            setTitle(title.subSequence(0, index), title.subSequence(index + 1, title.length()), LinearLayout.VERTICAL);
+            setTitle(title.subSequence(0, index), title.subSequence(index + 1, title.length()),
+                    LinearLayout.VERTICAL);
         } else {
             index = title.toString().indexOf("\t");
             if (index > 0) {
-                setTitle(title.subSequence(0, index), "  " + title.subSequence(index + 1, title.length()), LinearLayout.HORIZONTAL);
+                setTitle(title.subSequence(0, index), "  " + title.subSequence(index + 1,
+                        title.length()), LinearLayout.HORIZONTAL);
             } else {
                 mCenterText.setText(title);
                 mSubTitleText.setVisibility(View.GONE);

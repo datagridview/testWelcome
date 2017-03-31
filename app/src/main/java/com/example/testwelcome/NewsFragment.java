@@ -4,71 +4,46 @@ import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.ericliu.asyncexpandablelist.CollectionView;
 import com.ericliu.asyncexpandablelist.CollectionViewCallbacks;
 import com.shizhefei.view.coolrefreshview.CoolRefreshView;
 import com.shizhefei.view.coolrefreshview.SimpleOnPullListener;
-import com.shizhefei.view.coolrefreshview.header.MaterialHeader;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NewsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
+
 public class NewsFragment extends Fragment implements CollectionViewCallbacks<String, News> {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    //引入外部类
     private CoolRefreshView coolRefreshView;
     private CollectionView<String, News> mCollectionView;
     private CollectionView.Inventory<String, News> inventory;
 
     public NewsFragment() {}
 
-    public static NewsFragment newInstance(String param1, String param2) {
-        NewsFragment fragment = new NewsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
     }
 
+    //自带初始化layout
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_news, container, false);
     }
 
-
+    //自带初始化activity
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        //初始化titlebar控件
         boolean isImmersive = false;
         final TitleBar titlebar = (TitleBar) getActivity().findViewById(R.id.title_bar);
         titlebar.setImmersive(isImmersive);
@@ -76,24 +51,21 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
         titlebar.setTitle("今日新闻");
         titlebar.setTitleColor(Color.WHITE);
         titlebar.setLeftImageResource(R.drawable.head1);
+
         coolRefreshView = (CoolRefreshView) getView().findViewById(R.id.crv);
-       //  coolRefreshView.setPullHeader(new MaterialHeader(getContext()));
         //添加刷新监听
         coolRefreshView.addOnPullListener(new SimpleOnPullListener() {
             @Override
             public void onRefreshing(CoolRefreshView refreshView) {
-
+                //TODO：要完成对于数据的重新接受处理
             }
         });
 
 
+        //以编写形式导入新闻
         mCollectionView = (CollectionView) getActivity().findViewById(R.id.collectionView);
         mCollectionView.setCollectionCallbacks(this);
-
         inventory = CollectionView.Inventory.newInstance();
-
-        // groupOrdinal dictates the sequence of groups to be displayed in the list,
-        // the groups will be displayed in an ascending order on groupOrdinal
         int groupOrdinal = 0;
         CollectionView.InventoryGroup<String, News> group1 = inventory.newGroup(groupOrdinal);
         News news;
@@ -122,14 +94,7 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
         news.setNewsBody(getString(R.string.news_body4));
         group2.addItem(news);
 
-//        news = new News();
-//        news.setNewsTitle(getString(R.string.news_title5));
-//        news.setNewsBody(getString(R.string.news_body5));
-//        group2.addItem(news);
-
-
-
-        CollectionView.InventoryGroup<String, News> group3 = inventory.newGroup(3); // 2 is smaller than 10, displayed second
+        CollectionView.InventoryGroup<String, News> group3 = inventory.newGroup(3);
         group3.setHeaderItem(getString(R.string.news_header_australia));
 
         news = new News();
@@ -142,19 +107,13 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
         news.setNewsBody(getString(R.string.news_body7));
         group3.addItem(news);
 
-//
-//        news = new News();
-//        news.setNewsTitle(getString(R.string.news_title8));
-//        news.setNewsBody(getString(R.string.news_body8));
-//        group3.addItem(news);
-
-
         mCollectionView.updateInventory(inventory);
 }
 
-
+    //新闻中recycleview的各项定义
     @Override
-    public RecyclerView.ViewHolder newCollectionHeaderView(Context context, int groupOrdinal, ViewGroup parent) {
+    public RecyclerView.ViewHolder newCollectionHeaderView(Context context, int groupOrdinal,
+                                                           ViewGroup parent) {
         // Create a new view.
         View v = LayoutInflater.from(context)
                 .inflate(R.layout.header_row_item, parent, false);
@@ -163,7 +122,8 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
     }
 
     @Override
-    public RecyclerView.ViewHolder newCollectionItemView(Context context, int groupOrdinal, ViewGroup parent) {
+    public RecyclerView.ViewHolder newCollectionItemView(Context context, int groupOrdinal,
+                                                         ViewGroup parent) {
         View v = LayoutInflater.from(context)
                 .inflate(R.layout.text_row_item, parent, false);
 
@@ -171,12 +131,14 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
     }
 
     @Override
-    public void bindCollectionHeaderView(Context context, RecyclerView.ViewHolder holder, int groupOrdinal, String headerItem) {
+    public void bindCollectionHeaderView(Context context, RecyclerView.ViewHolder holder,
+                                         int groupOrdinal, String headerItem) {
         ((TitleHolder) holder).getTextView().setText((String) headerItem);
     }
 
     @Override
-    public void bindCollectionItemView(Context context, RecyclerView.ViewHolder holder, int groupOrdinal, News item) {
+    public void bindCollectionItemView(Context context, RecyclerView.ViewHolder holder,
+                                       int groupOrdinal, News item) {
         NewsItemHolder newsItemHolder = (NewsItemHolder) holder;
         newsItemHolder.getTextViewTitle().setText(item.getNewsTitle());
         newsItemHolder.getTextViewDescrption().setText(item.getNewsBody());
@@ -204,7 +166,6 @@ public class NewsFragment extends Fragment implements CollectionViewCallbacks<St
 
         public NewsItemHolder(View v) {
             super(v);
-            // Define click listener for the ViewHolder's View.
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

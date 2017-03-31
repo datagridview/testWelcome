@@ -4,56 +4,42 @@ package com.example.testwelcome;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.OrientationEventListener;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link TimeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.testwelcome.timeline.*;
+import com.example.testwelcome.timeline.model.OrderStatus;
+import com.example.testwelcome.timeline.model.Orientation;
+import com.example.testwelcome.timeline.model.TimeLineModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class TimeFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private RecyclerView mRecyclerView;
+    private com.example.testwelcome.timeline.TimeLineAdapter mTimeLineAdapter;
+    private List<TimeLineModel> mDataList = new ArrayList<>();
+    private Orientation mOrientation;
+    private boolean mWithLinePadding;
 
 
     public TimeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TimeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TimeFragment newInstance(String param1, String param2) {
-        TimeFragment fragment = new TimeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+
+
     }
 
     @Override
@@ -64,15 +50,48 @@ public class TimeFragment extends Fragment {
 
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        final TitleBar titlebar = (TitleBar) getView().findViewById(R.id.title_bar);
+
+        mOrientation = Orientation.valueOf("VERTICAL");
+        mWithLinePadding = true;
+        mRecyclerView = (RecyclerView) getView().findViewById(R.id.recyclerView);
+        mRecyclerView.setLayoutManager(getLinearLayoutManager());
+        mRecyclerView.setHasFixedSize(true);
+        setDataListItems();
+        mTimeLineAdapter = new TimeLineAdapter(mDataList, mOrientation, mWithLinePadding);
+        mRecyclerView.setAdapter(mTimeLineAdapter);
+
         boolean isImmersive = false;
-        final TitleBar titlebar = (TitleBar) getActivity().findViewById(R.id.title_bar);
 
         titlebar.setImmersive(isImmersive);
-
         titlebar.setBackgroundColor(Color.parseColor("#546379"));
         titlebar.setTitle("学习之路");
         titlebar.setTitleColor(Color.WHITE);
         titlebar.setLeftImageResource(R.drawable.head1);
+
     }
+
+    private LinearLayoutManager getLinearLayoutManager() {
+        if (mOrientation == Orientation.HORIZONTAL) {
+            return new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL, false);
+        } else {
+            return new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL, false);
+        }
+    }
+
+
+    private void setDataListItems(){
+        mDataList.add(new TimeLineModel("", "", OrderStatus.ACTIVE));
+        //mDataList.add(new TimeLineModel("Item successfully delivered", "", OrderStatus.INACTIVE));
+        mDataList.add(new TimeLineModel("Courier is out to delivery your order", "2017-02-12 08:00", OrderStatus.ACTIVE));
+        mDataList.add(new TimeLineModel("Item has reached courier facility at New Delhi", "2017-02-11 21:00", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Item has been given to the courier", "2017-02-11 18:00", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Item is packed and will dispatch soon", "2017-02-11 09:30", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Order is being readied for dispatch", "2017-02-11 08:00", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Order processing initiated", "2017-02-10 15:00", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Order confirmed by seller", "2017-02-10 14:30", OrderStatus.COMPLETED));
+        mDataList.add(new TimeLineModel("Order placed successfully", "2017-02-10 14:00", OrderStatus.COMPLETED));
+    }
+
 
 }

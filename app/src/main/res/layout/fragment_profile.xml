@@ -28,7 +28,8 @@
                     android:layout_marginTop="5dp"
                     android:orientation="horizontal"
                     android:layout_weight="12.40"
-                    android:weightSum="1">
+                    android:weightSum="1"
+                    android:clickable="true"  >
 
                     <TextView
                         android:id="@+id/My_checkin"
@@ -62,8 +63,9 @@
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
                     android:weightSum="1"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true">
 
                     <TextView
                         android:layout_width="270dp"
@@ -74,7 +76,8 @@
                         android:paddingTop="8dp"
                         android:text="   我的课程"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -90,8 +93,9 @@
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
                     android:weightSum="1"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true">
 
                     <TextView
                         android:layout_width="270dp"
@@ -102,7 +106,8 @@
                         android:paddingTop="8dp"
                         android:text="   我的好友"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -117,8 +122,8 @@
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
                     android:weightSum="1"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -129,7 +134,8 @@
                         android:paddingTop="8dp"
                         android:text="   课程测试"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -144,8 +150,9 @@
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
                     android:weightSum="1"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    >
 
                     <TextView
                         android:layout_width="270dp"
@@ -156,7 +163,8 @@
                         android:paddingTop="8dp"
                         android:text="   我的收藏"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -171,8 +179,8 @@
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
                     android:weightSum="1"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -183,7 +191,8 @@
                         android:paddingTop="8dp"
                         android:text="   浏览记录"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -198,13 +207,13 @@
                     android:padding="2dp" />
 
                 <LinearLayout
-                    android:id="@+id/My_list_caogao"
+                    android:id="@+id/My_list_note"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -215,7 +224,8 @@
                         android:paddingTop="8dp"
                         android:text="   笔记拍摄"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -229,8 +239,8 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -241,7 +251,8 @@
                         android:paddingTop="8dp"
                         android:text="   随笔记录"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -255,8 +266,8 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -267,7 +278,8 @@
                         android:paddingTop="8dp"
                         android:text="   资料收藏"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -287,8 +299,8 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -299,7 +311,8 @@
                         android:paddingTop="8dp"
                         android:text="       关于"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"
@@ -313,8 +326,8 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"
                     android:paddingLeft="15dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="30dp">
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp">
 
                     <TextView
                         android:layout_width="270dp"
@@ -324,7 +337,8 @@
                         android:paddingTop="8dp"
                         android:text="       退出"
                         android:textColor="#666666"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_marginLeft="40dp"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="17dp"

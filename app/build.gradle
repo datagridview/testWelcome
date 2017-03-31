@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.example.testwelcome"
         minSdkVersion 17
-        targetSdkVersion 25
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -25,6 +25,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     // compile 'com.android.support:support-v4:23.4.0'
+    compile files('libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies/ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar')
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.stephentuso:welcome:1.1.0'
     compile 'com.jakewharton:butterknife:8.4.0'
@@ -38,5 +39,5 @@ dependencies {
     compile 'com.mikepenz:fontawesome-typeface:4.6.0.3@aar'
     compile 'com.mxn.soul:flowingdrawer-core:1.2.5'
     compile 'com.nineoldandroids:library:2.4.0'
-    compile files('libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies/ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar')
+    compile 'com.github.vipulasri:timelineview:1.0.5'
 }
