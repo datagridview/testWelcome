@@ -23,6 +23,7 @@
                 android:weightSum="1">
 
                 <LinearLayout
+                    android:id="@+id/My_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -87,7 +88,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/My_list_huiyuanka"
+                    android:id="@+id/My_friend"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="0dp"

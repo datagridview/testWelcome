@@ -53,6 +53,26 @@ public class ProfileFragment extends Fragment {
         }
 
         );
+        LinearLayout profileLinearLayout=(LinearLayout) getView().findViewById(R.id.My_profile);
+        profileLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getActivity(), myProfileAvtivity.class);
+                startActivity(intent1);
+            }
+        }
+
+        );
+        LinearLayout friendLinearLayout=(LinearLayout) getView().findViewById(R.id.My_friend);
+        friendLinearLayout.setOnClickListener(new View.OnClickListener() {
+                                                   @Override
+                                                   public void onClick(View v) {
+                                                       Intent intent1 = new Intent(getActivity(), friendActivity.class);
+                                                       startActivity(intent1);
+                                                   }
+                                               }
+
+        );
     }
 
 }

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="selectiondialogs_materialdesign500_colors">
+        <item>@color/selectiondialogs_materialdesign500_red</item>
+        <item>@color/selectiondialogs_materialdesign500_pink</item>
+        <item>@color/selectiondialogs_materialdesign500_purple</item>
+        <item>@color/selectiondialogs_materialdesign500_deep_purple</item>
+        <item>@color/selectiondialogs_materialdesign500_indigo</item>
+        <item>@color/selectiondialogs_materialdesign500_blue</item>
+        <item>@color/selectiondialogs_materialdesign500_light_blue</item>
+        <item>@color/selectiondialogs_materialdesign500_cyan</item>
+        <item>@color/selectiondialogs_materialdesign500_teal</item>
+        <item>@color/selectiondialogs_materialdesign500_green</item>
+        <item>@color/selectiondialogs_materialdesign500_light_green</item>
+        <item>@color/selectiondialogs_materialdesign500_lime</item>
+        <item>@color/selectiondialogs_materialdesign500_yellow</item>
+        <item>@color/selectiondialogs_materialdesign500_amber</item>
+        <item>@color/selectiondialogs_materialdesign500_orange</item>
+        <item>@color/selectiondialogs_materialdesign500_deep_orange</item>
+        <item>@color/selectiondialogs_materialdesign500_brown</item>
+        <item>@color/selectiondialogs_materialdesign500_grey</item>
+        <item>@color/selectiondialogs_materialdesign500_blue_grey</item>
+    </integer-array>
+    <string-array name="selectiondialogs_materialdesign500_ids">
+        <item>@string/selectiondialogs_materialdesign500_id_red</item>
+        <item>@string/selectiondialogs_materialdesign500_id_pink</item>
+        <item>@string/selectiondialogs_materialdesign500_id_purple</item>
+        <item>@string/selectiondialogs_materialdesign500_id_deep_purple</item>
+        <item>@string/selectiondialogs_materialdesign500_id_indigo</item>
+        <item>@string/selectiondialogs_materialdesign500_id_blue</item>
+        <item>@string/selectiondialogs_materialdesign500_id_light_blue</item>
+        <item>@string/selectiondialogs_materialdesign500_id_cyan</item>
+        <item>@string/selectiondialogs_materialdesign500_id_teal</item>
+        <item>@string/selectiondialogs_materialdesign500_id_green</item>
+        <item>@string/selectiondialogs_materialdesign500_id_light_green</item>
+        <item>@string/selectiondialogs_materialdesign500_id_lime</item>
+        <item>@string/selectiondialogs_materialdesign500_id_yellow</item>
+        <item>@string/selectiondialogs_materialdesign500_id_amber</item>
+        <item>@string/selectiondialogs_materialdesign500_id_orange</item>
+        <item>@string/selectiondialogs_materialdesign500_id_deep_orange</item>
+        <item>@string/selectiondialogs_materialdesign500_id_brown</item>
+        <item>@string/selectiondialogs_materialdesign500_id_grey</item>
+        <item>@string/selectiondialogs_materialdesign500_id_blue_grey</item>
+    </string-array>
+    <string-array name="selectiondialogs_materialdesign500_names">
+        <item>@string/selectiondialogs_materialdesign500_red</item>
+        <item>@string/selectiondialogs_materialdesign500_pink</item>
+        <item>@string/selectiondialogs_materialdesign500_purple</item>
+        <item>@string/selectiondialogs_materialdesign500_deep_purple</item>
+        <item>@string/selectiondialogs_materialdesign500_indigo</item>
+        <item>@string/selectiondialogs_materialdesign500_blue</item>
+        <item>@string/selectiondialogs_materialdesign500_light_blue</item>
+        <item>@string/selectiondialogs_materialdesign500_cyan</item>
+        <item>@string/selectiondialogs_materialdesign500_teal</item>
+        <item>@string/selectiondialogs_materialdesign500_green</item>
+        <item>@string/selectiondialogs_materialdesign500_light_green</item>
+        <item>@string/selectiondialogs_materialdesign500_lime</item>
+        <item>@string/selectiondialogs_materialdesign500_yellow</item>
+        <item>@string/selectiondialogs_materialdesign500_amber</item>
+        <item>@string/selectiondialogs_materialdesign500_orange</item>
+        <item>@string/selectiondialogs_materialdesign500_deep_orange</item>
+        <item>@string/selectiondialogs_materialdesign500_brown</item>
+        <item>@string/selectiondialogs_materialdesign500_grey</item>
+        <item>@string/selectiondialogs_materialdesign500_blue_grey</item>
+    </string-array>
+    <color name="selectiondialogs_default_item_color">#757575</color>
+    <color name="selectiondialogs_materialdesign500_amber">#FFC107</color>
+    <color name="selectiondialogs_materialdesign500_blue">#448AFF</color>
+    <color name="selectiondialogs_materialdesign500_blue_grey">#607D8B</color>
+    <color name="selectiondialogs_materialdesign500_brown">#795548</color>
+    <color name="selectiondialogs_materialdesign500_cyan">#00BCD4</color>
+    <color name="selectiondialogs_materialdesign500_deep_orange">#FF5722</color>
+    <color name="selectiondialogs_materialdesign500_deep_purple">#7C4DFF</color>
+    <color name="selectiondialogs_materialdesign500_green">#4CAF50</color>
+    <color name="selectiondialogs_materialdesign500_grey">#9E9E9E</color>
+    <color name="selectiondialogs_materialdesign500_indigo">#3F51B5</color>
+    <color name="selectiondialogs_materialdesign500_light_blue">#03A9F4</color>
+    <color name="selectiondialogs_materialdesign500_light_green">#8BC34A</color>
+    <color name="selectiondialogs_materialdesign500_lime">#CDDC39</color>
+    <color name="selectiondialogs_materialdesign500_orange">#FF9800</color>
+    <color name="selectiondialogs_materialdesign500_pink">#FF4081</color>
+    <color name="selectiondialogs_materialdesign500_purple">#9C27B0</color>
+    <color name="selectiondialogs_materialdesign500_red">#F44336</color>
+    <color name="selectiondialogs_materialdesign500_teal">#009688</color>
+    <color name="selectiondialogs_materialdesign500_yellow">#FFEB3B</color>
+    <color name="selectiondialogs_textHintDisabled">#9e9e9e</color>
+    <color name="selectiondialogs_textPrimary">#212121</color>
+    <color name="selectiondialogs_textSecondary">#757575</color>
+    <declare-styleable name="SelectedItemView"><attr format="string" name="hint"/><attr format="string" name="itemId"/><attr format="reference" name="itemIcon"/><attr format="color|integer" name="itemColor"/><attr format="string" name="itemName"/></declare-styleable>
+    <string name="selectiondialogs_app_name">Selection Dialogs</string>
+    <string name="selectiondialogs_color_dialog_title1">选择年级</string>
+    <string name="selectiondialogs_color_dialog_title">选择课程</string>
+    <string name="selectiondialogs_default_hint">hint</string>
+    <string name="selectiondialogs_default_item_id" translatable="false">no_id</string>
+    <string name="selectiondialogs_default_item_name">text</string>
+    <string name="selectiondialogs_icon_dialog_title">选择年级</string>
+    <string name="selectiondialogs_materialdesign500_amber">两位数和三位数乘一位数</string>
+    <string name="selectiondialogs_materialdesign500_blue">倍的认识</string>
+    <string name="selectiondialogs_materialdesign500_blue_grey">千克和克</string>
+    <string name="selectiondialogs_materialdesign500_brown">长方形和正方形</string>
+    <string name="selectiondialogs_materialdesign500_cyan">口算除法</string>
+    <string name="selectiondialogs_materialdesign500_deep_orange">平移、旋转和轴对称</string>
+    <string name="selectiondialogs_materialdesign500_deep_purple">分数</string>
+    <string name="selectiondialogs_materialdesign500_green">千米和吨</string>
+    <string name="selectiondialogs_materialdesign500_grey">含有两级的混合运算</string>
+    <string name="selectiondialogs_materialdesign500_id_amber" translatable="false"></string>
+    <string name="selectiondialogs_materialdesign500_id_blue" translatable="false">年月日</string>
+    <string name="selectiondialogs_materialdesign500_id_blue_grey" translatable="false">认识平年和闰年</string>
+    <string name="selectiondialogs_materialdesign500_id_brown" translatable="false">24时计时法</string>
+    <string name="selectiondialogs_materialdesign500_id_cyan" translatable="false">认识面积</string>
+    <string name="selectiondialogs_materialdesign500_id_deep_orange" translatable="false">长方形和正方形的面积计算</string>
+    <string name="selectiondialogs_materialdesign500_id_deep_purple" translatable="false">认识几分之几</string>
+    <string name="selectiondialogs_materialdesign500_id_green" translatable="false">小数的初步认识</string>
+    <string name="selectiondialogs_materialdesign500_id_grey" translatable="false">小数的大小比较</string>
+    <string name="selectiondialogs_materialdesign500_id_indigo" translatable="false">简单的小数加、减法</string>
+    <string name="selectiondialogs_materialdesign500_id_light_blue" translatable="false">lightblue</string>
+    <string name="selectiondialogs_materialdesign500_id_light_green" translatable="false">lightgreen</string>
+    <string name="selectiondialogs_materialdesign500_id_lime" translatable="false">lime</string>
+    <string name="selectiondialogs_materialdesign500_id_orange" translatable="false">orange</string>
+    <string name="selectiondialogs_materialdesign500_id_pink" translatable="false">pink</string>
+    <string name="selectiondialogs_materialdesign500_id_purple" translatable="false">purple</string>
+    <string name="selectiondialogs_materialdesign500_id_red" translatable="false">red</string>
+    <string name="selectiondialogs_materialdesign500_id_teal" translatable="false">teal</string>
+    <string name="selectiondialogs_materialdesign500_id_yellow" translatable="false">yellow</string>
+    <string name="selectiondialogs_materialdesign500_indigo">含有小括号的混合运算</string>
+    <string name="selectiondialogs_materialdesign500_light_blue">年月日</string>
+    <string name="selectiondialogs_materialdesign500_light_green">认识平年和闰年</string>
+    <string name="selectiondialogs_materialdesign500_lime">认识面积</string>
+    <string name="selectiondialogs_materialdesign500_orange">长方形和正方形的面积计算</string>
+    <string name="selectiondialogs_materialdesign500_pink">认识几分之几</string>
+    <string name="selectiondialogs_materialdesign500_purple">小数的初步认识</string>
+    <string name="selectiondialogs_materialdesign500_red">小数的大小比较</string>
+    <string name="selectiondialogs_materialdesign500_teal">简单的小数加、减法</string>
+    <string name="selectiondialogs_materialdesign500_yellow">24时计时法</string>
+    <string name="selectiondialogs_undefined">#undefined#</string>
+</resources>

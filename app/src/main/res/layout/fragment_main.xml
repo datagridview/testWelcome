@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/activity_test"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <pl.coreorb.selectiondialogs.views.SelectedItemView
+            android:id="@+id/icon_siv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="年级"
+            app:itemIcon="@drawable/sample_icon_bookmark"
+            app:itemName="一年级" />
+
+        <pl.coreorb.selectiondialogs.views.SelectedItemView
+            android:id="@+id/color_siv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hint="课程名"
+            app:itemName="@string/selectiondialogs_materialdesign500_green"
+            app:itemColor="@color/selectiondialogs_materialdesign500_green" />
+
+        <pl.coreorb.selectiondialogs.views.SelectedItemView
+            android:id="@+id/text_siv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="备注"
+            app:itemIcon="@drawable/icon_text"
+            app:itemName="@string/text_hint" />
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/raised_selector"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:text="确定"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -21,16 +21,12 @@
     <dimen name="bottom_navigation_text_size_inactive">12sp</dimen>
 
 
-
-
-
     <!--recycleview-->
     <!-- cards -->
     <dimen name="card_header_height">48dp</dimen>
     <dimen name="card_elevation">2dp</dimen>
     <dimen name="card_corner_radius">0dp</dimen>
     <dimen name="card_header_elevation">4dp</dimen>
-
 
 
     <!-- standard metrics -->

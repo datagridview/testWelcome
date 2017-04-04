@@ -6,31 +6,41 @@
 
     <activity android:name=".CustomContainerActivity" />
 
+    <!-- android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        android:supportsRtl="true">
         <activity
             android:name=".MyWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".demActivity"></activity>
-        <activity android:name=".cameraActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".demActivity" />
+        <activity
+            android:name=".CollapsingToolbarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen1" />
+        <activity
+            android:name=".cameraActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".testActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".myProfileAvtivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+        <activity android:name=".friendActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

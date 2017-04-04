@@ -41,7 +41,7 @@ public class ResourceFragment extends Fragment {
         btnMath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(getActivity(),demActivity.class);
+                Intent intent1=new Intent(getActivity(),testActivity.class);
                 startActivity(intent1);
             }
         });
